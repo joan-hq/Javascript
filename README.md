@@ -9,6 +9,7 @@ An integer number greater than 1 is called a prime if it cannot be divided witho
 
 1. 
 For every loop, write down which values it shows, in your opinion. And then compare with the answer.Both loops alert same values or not?
+
 The prefix form ++i: 
 let i = 0;
 while (++i < 5) alert( i );
