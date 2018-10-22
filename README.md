@@ -7,15 +7,48 @@
 
 * For every loop, write down which values it shows, in your opinion. And then compare with the answer. Both loops alert same values or not?
 The prefix form ++i: 
+```javascript
 let i = 0;
 while (++i < 5) alert( i );
 The postfix form i++
 let i = 0;
 while (i++ < 5) alert( i );
-
+```
 * For each loop write down which values it is going to show. Then compare with the answer. Both loops alert same values or not?
 The postfix form:
+
+```javascript
 for (let i = 0; i < 5; i++) alert( i );
 The prefix form:
 for (let i = 0; i < 5; ++i) alert( i );
+```
 
+## obiect
+* Write the function isEmpty(obj) which returns true if the object has no properties, false otherwise.
+Should work like that:
+```javascript
+let schedule = {};
+alert( isEmpty(schedule) ); // true
+schedule["8:30"] = "get up";
+alert( isEmpty(schedule) ); // false
+```
+
+* Create a function multiplyNumeric(obj) that multiplies all numeric properties of obj by 2.
+For instance:
+```javascript
+// before the call
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+multiplyNumeric(menu);
+
+// after the call
+menu = {
+  width: 400,
+  height: 600,
+  title: "My menu"
+};
+```
